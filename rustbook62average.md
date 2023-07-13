@@ -55,7 +55,7 @@ comparison like the if statement. Oh no, sirree! Our pals, the match
 expressions, can handle anything from integers to strings, and even complex
 patterns. They're versatile like that.
 
-But here's the real kicker, my friend. Rust's match expression is like an
+But here's the real kicker. Rust's match expression is like an
 enigmatic diva, stealing the center stage in our value_in_cents function. It
 struts its stuff like a superstar on Broadway, leaving the audience in awe. This
 showstopper knows how to pack a punch and deliver jaw-dropping antics.
@@ -74,7 +74,7 @@ And just like a coin-sorting machine, if a pattern matches, the corresponding
 code executes. But if a pattern doesn't find its match, the show goes on, and
 execution continues to the next arm.
 
-We can have as many arms as we need, my friend. In our grand spectacle, our
+We can have as many arms as we need. In our grand spectacle, our
 match expression boasts four arms, each with its own pattern and code, creating
 a symphony of logic and creativity.
 
@@ -83,42 +83,6 @@ itself. It's like a magic trick, where the resultant value of the matching arm
 becomes the grand finale, the value that gets returned for the entire match
 expression.
 
-At first glance, match statements may seem humble, focused on hunting down a
-single expression or two. But don't be fooled by their simplicity; it's
-precisely this laser-like focus that allows them to catch their prey.
-No-nonsense questions, just straightforward matching to find that perfect fit.
-And let me tell you, these bad boys aren't limited to a single type of
-comparison like the if statement. Oh no, sirree! Our pals, the match
-expressions, can handle anything from integers to strings, and even complex
-patterns. They're versatile like that.
-
-Rust's match expression is like an enigmatic diva, stealing the center stage in
-our value_in_cents function. It struts its stuff like a superstar on Broadway,
-leaving the audience in awe. This showstopper knows how to pack a punch and
-deliver jaw-dropping antics.
-
-As the curtains rise, we set the scene with the mighty match keyword, signaling
-the start of an epic performance like no other. And our star attraction? The
-humble penny and nickel, dressed in a shiny new suit called an enum. We crafted
-this ensemble with great care, ensuring that our actors shine bright on this
-cybernetic stage.
-
-Each match arm holds the key to a specific pattern, ready to be matched against
-our value. With the => operator, the code associated with each arm awaits its
-cue, like a faithful partner in a synchronized dance. The match expression
-compares the value against each pattern, one by one, in the order they appear.
-And just like a coin-sorting machine, if a pattern matches, the corresponding
-code executes. But if a pattern doesn't find its match, the show goes on, and
-execution continues to the next arm.
-
-We can have as many arms as we need. In our grand spectacle, our match
-expression boasts four arms, each with its own pattern and code, creating a
-symphony of logic and creativity.
-
-Now, here's the exciting part: the code within each arm is an expression in
-itself. It's like a magic trick, where the resultant value of the matching arm
-becomes the grand finale, the value that gets returned for the entire match
-expression.
 
 ```rust
 fn value_in_cents(coin: Coin) -> u8 {
@@ -199,7 +163,7 @@ these state wonders. Within the Quarter's very core, it holds the power to bind
 the UsState value within its grasp. It's as if a hidden chamber exists within
 the coin, safeguarding the essence of each state.
 
-And here, my friend, is where the true magic unfolds—the enchantment of match
+And here is where the true magic unfolds—the enchantment of match
 arms. They go beyond mere value matching; they possess the extraordinary ability
 to extract the secrets held within. It's like wielding a key that unlocks a
 door, revealing the hidden vault of riches. With match, we dance through the
@@ -208,7 +172,7 @@ intricate patterns, binding the values they embrace, one by one.
 With each coin that crosses your path, the match expression springs to life,
 seeking patterns that match their essence. And lo and behold, a new pattern
 emerges—a Coin::Quarter, concealing a mystical state value within. But we won't
-stop there, my friend. Oh, no! We'll take it a step further and introduce a
+stop there. Oh, no! We'll take it a step further and introduce a
 magical variable, known as state, which binds to the state value nestled within
 the Coin::Quarter variant.
 
@@ -221,7 +185,7 @@ dance as old as time itself.
 
 Together, we engage in an ancient ritual, delicately extracting the Quarter's
 innards while whispering sweet nothings in its ear. It's a moment of connection,
-my friend, where the code comes alive and secrets are revealed. The match
+where the code comes alive and secrets are revealed. The match
 expression, fueled by its magical partnership with State, unlocks the hidden
 wonders of the Quarter, painting a vibrant picture of its true essence.
 
@@ -467,14 +431,14 @@ thrilling journey, traversing the realms of cyberspace with their own unique
 space count. And here's a little secret—this extravaganza requires hardcoding
 the dice value at 9, adding an extra layer of suspense to the mix.
 
-Now, my dear comrade, let me enlighten you about the enchanting rules of Rust.
+Now let me enlighten you about the enchanting rules of Rust.
 When it comes to patterns in match expressions, order matters. Thus, placing the
 catch-all arm at the end ensures that no prior arms miss their chance to shine.
 Rust, ever the vigilant guardian, will remind you with a resounding voice if you
 accidentally switch them up. It's a gentle reminder to keep the code flowing
 like a well-rehearsed symphony.
 
-Ah, but wait, my whimsical friend, there's more to the tale! Remember when we
+Ah, but wait there's more to the tale! Remember when we
 talked about catch-all patterns? Well, Rust has a wild card up its sleeve—a
 pattern that carries the weight of absolute power. It goes by the name of "_", a
 single letter that grants you dominion over anything that fails to fit into
