@@ -46,7 +46,7 @@ bag of tricks.
  yes, it's true, I did say "Gordian," and not Knott or Cable, but hey, you never
  know what mysteries may unfold along the way... maybe Medusa herself will make
  an appearance! Wait, why am I getting carried away with Greek mythology?
-
+ 
 Behold, the coins! Penny, Nickel, Dime, and Quarter—each with its distinct
 worth. With a simple match expression, we can bring clarity to this sea of
 currency. The beauty lies in the . We match each coin, one by one, and when a
@@ -387,16 +387,6 @@ patterns, finding the Some(i) that matches our container. It takes the value,
 adds 1, and wraps it within the wondrous Some once again. The result? We receive
 a new container, six, containing the value 6. Oh, the joy!
 
-Now let’s consider the second call of plus_one in Listing 6-5, where x is None.
-We enter the match and compare to the first arm:
-
-```rust
-None => None,
-```
-
-It matches! There’s no value to add to, so the program stops and returns the
-None value on the right side of =>. Because the first arm matched, no other arms
-are compared.
 
 So, embrace the power of matching with Option<T>! Let it guide you through the
 twists and turns of existence and non-existence. Uncover the values, perform the
@@ -470,7 +460,7 @@ reference exceptions”!
 
     Catch-all Patterns and the _ Placeholder
 
-I was messing around with Rust's match feature recently and came across this
+o I was messing around with Rust's match feature recently and came across this
 neat idea involving catch-all patterns. Basically, think of it like rolling a
 die and getting different results based on the outcome – only we manually assign
 the numbers ourselves (for simplicity's sake anyway). Don't worry though, once
