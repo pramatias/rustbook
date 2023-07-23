@@ -58,7 +58,7 @@ right?
 But here's the thing: just like in the filesystem, the paths brought into scope
 with use also check privacy. It's like having access to a shortcut, but with
 some security measures. You can only access what you're allowed to access.
-Privacy rules still apply, my friend.
+Privacy rules still apply.
 
 Now, here's something important to note: the use statement only creates the
 shortcut for the particular scope it's in. In Listing 7-12, we moved the
@@ -178,7 +178,7 @@ right here."
 On the other hand, Listing 7-13 might work, but it's not very clear. We brought
 the add_to_waitlist function into scope directly using use, without specifying
 the parent module. It's like saying, "Hey, I'm using this function, but who
-knows where it came from?" It's a bit ambiguous, my friend.
+knows where it came from?" It's a bit ambiguous.
 
 In Rust, we like to be explicit about where things come from. It helps with code
 readability and understanding. So, even though Listing 7-11 requires a bit more
@@ -188,10 +188,10 @@ while still keeping the path concise and minimizing repetition.
 
 Let's keep things clear and tidy in our code, just like tidying up our room.
 Specify the parent module, bring functions into scope, and let Rust know exactly
-what we're talking about. It's all about being clear, my friend, both in code
+what we're talking about. It's all about being clear, both in code
 and in life.
 
-Now, here's an interesting tidbit, my friend. When it comes to bringing in
+Now, here's an interesting tidbit. When it comes to bringing in
 structs, enums, and other items with use, things are a bit different. In fact,
 it's idiomatic in Rust to specify the full path for these items. Let me show you
 an example.
@@ -252,14 +252,14 @@ fn function2() -> io::Result<()> {
 Listing 7-15: Bringing two types with the same name into the same scope requires
 using their parent modules.
 
-But don't worry, my friend, there's a way around it. Take a look at Listing
+But don't worry, there's a way around it. Take a look at Listing
 7-15. Here, we're bringing two Result types into scope that have the same name
 but different parent modules. Tricky situation, right? But fear not, for Rust
 has a solution.
 
 Instead of just specifying use std::fmt::Result and use std::io::Result, we go
 the extra mile. We use their parent modules as well, like use std::fmt and use
-std::io. This way, we're distinguishing between the two Result types, my friend.
+std::io. This way, we're distinguishing between the two Result types.
 Rust can breathe a sigh of relief knowing exactly which Result we're referring
 to in our code.
 
@@ -267,7 +267,7 @@ It's like creating a clear path, a distinct identity for each Result type. We're
 giving them their own space to shine and be recognized. No more confusion, no
 more guessing. Just pure clarity and certainty.
 
-So, remember, my friend, when you find yourself in a situation where two items
+So, remember, when you find yourself in a situation where two items
 share the same name, go ahead and specify their parent modules in your use
 statements. Let Rust know exactly which item you're referring to. It's like
 playing the role of a mediator, settling the dispute and maintaining peace in
@@ -275,7 +275,7 @@ the code.
 
     Providing New Names with the as Keyword
 
-Here's another little trick, my friend. When you find yourself in a pickle, with
+Here's another little trick. When you find yourself in a pickle, with
 two types sharing the same name and you want to bring them into the same scope,
 Rust has got your back. Introducing the mighty "as" keyword!
 
@@ -300,7 +300,7 @@ conflicts. So, we use the "as" keyword to provide a new name, a fresh alias, for
 one of the Result types. It's like giving it a new identity, a secret code name.
 
 In the first use statement, we bring in the std::fmt::Result type just as it is.
-No need for a name change here, my friend. But in the second use statement, we
+No need for a name change here. But in the second use statement, we
 take control and say, "Hey, std::io::Result, from now on, you shall be known as
 IoResult!" And just like that, we've given it a brand new name, a shiny new
 persona.
@@ -310,7 +310,7 @@ names. We call the std::fmt::Result just as Result, and the std::io::Result, now
 known as IoResult, can be referenced by its fresh alias. It's like having a
 secret language, a special code that only you and Rust understand.
 
-So, my friend, whether you prefer the original names or you want to give them
+So, whether you prefer the original names or you want to give them
 cool new aliases, the choice is yours. Both approaches, Listing 7-15 and Listing
 7-16, are considered the "right" way to do it in Rust. It's all about finding
 what works best for you and your code.
@@ -321,7 +321,7 @@ path, to create a world where names don't collide and confusion is kept at bay.
 
     Re-exporting Names with pub use
 
-Let me tell you about a cool technique called re-exporting, my friend. You see,
+Let me tell you about a cool technique called re-exporting. You see,
 when we bring a name into scope using the use keyword, it's all private and
 hidden away. But what if we want others to be able to use that name as if it
 were defined in their own code? Well, that's where pub use comes into play.
@@ -368,7 +368,7 @@ organize your code internally while exposing a different structure to those who
 use it. It's all about creating a seamless experience for both the creators and
 the users of your code.
 
-So, my friend, embrace the power of pub use! Re-export those names, make them
+So, embrace the power of pub use! Re-export those names, make them
 accessible to others, and let your code shine. It's not just about
 functionality; it's about making life easier for those who interact with your
 code. And who knows, maybe one day, your code will become a widely used library,
@@ -395,8 +395,7 @@ Once Cargo did its thing and got the package for us, we were ready to bring
 those rand definitions into the scope of our project. We used a cool line that
 starts with the name of the crate, rand, and then listed the items we wanted to
 bring into scope. In our case, we brought in the Rng trait. Remember that? It
-allowed us to call the awesome rand::thread_rng() function. Good times, my
-friend, good times!
+allowed us to call the awesome rand::thread_rng() function.
 
 So, in the end, we had this nice line in our code: "use rand::Rng;". It's like
 opening a door to the rand crate and saying, "Hey, come on in! I want to use
@@ -445,7 +444,7 @@ use std::io;
 // --snip--
 ```
 
-But fear not, my friend, because Rust has got our backs. We can use nested paths
+But fear not, because Rust has got our backs. We can use nested paths
 to bring all those items into scope in just one line. It's like a magical
 compression technique for our use statements.
 
