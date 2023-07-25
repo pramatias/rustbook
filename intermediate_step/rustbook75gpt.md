@@ -57,11 +57,8 @@ pub mod hosting {
 }
 ```
 
-Listing 7-22: Definitions inside the front_of_house module in
+Listing 7-22: Definitions inside the front_of_house module in src/front_of_house.rs
 
-```rust
-src/front_of_house.rs
-```
 
 This code defines the hosting module, and inside it, we have the add_to_waitlist
 function. It's like we're setting up a little gathering place for all the people
@@ -179,7 +176,7 @@ src/lib.rs hasn't changed one bit. It's still doing its job, making the hosting
 module accessible to the outside world. And let me tell you a little secret: the
 use statement has no impact on which files are compiled as part of the crate.
 It's just there to bring paths into scope and make our lives a bit easier. So,
-use it wisely, my friend.
+use it wisely.
 
     Summary
 
