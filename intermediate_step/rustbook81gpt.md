@@ -1,6 +1,6 @@
-Storing Lists of Values with Vectors
+    Storing Lists of Values with Vectors
 
-Alright, let's talk about vectors, people! Vectors are like the Swiss Army
+Alright, let's talk about vectors! Vectors are like the Swiss Army
 knives of collections. They let you store multiple values of the same type in
 one handy data structure. It's like having a whole bunch of items lined up next
 to each other in your memory. Pretty neat, huh?
@@ -32,7 +32,7 @@ let Rust handle the rest. Vectors are your trusty companions when it comes to
 storing lists of items, whether it's lines of text in a file or prices of
 goodies in a shopping cart. They've got your back!
 
-Alright, folks, let me tell you about a little shortcut that Rust has for
+Alright, let me tell you about a little shortcut that Rust has for
 creating vectors with some initial values. It's called the vec! macro, and it's
 like a magic wand for vectors. Check out Listing 8-2, it's gonna blow your mind!
 
